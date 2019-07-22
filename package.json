@@ -1,6 +1,6 @@
 {
   "name": "async-mssql-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "async-mssql-client",
   "main": "app.js",
   "dependencies": {
