@@ -8,13 +8,15 @@ const AbstractSqlRecordset = require('./lib/AbstractSqlRecordset');
 
 async function getOpenConnectionAsync(config) {
 
+
+
     var config = {
-        server: config.get('hostname'),
+        server: config.getRequired('server'),
         authentication: {
             type: "default",
             options: {
-                userName: config.get('username'),
-                password: config.get('password')
+                userName: config.getRequired('username'),
+                password: config.getRequired('password')
             }
         }
     };
